@@ -1,0 +1,7 @@
+﻿services:
+  glorpdotnet:
+    image: glorpdotnet
+    build:
+      context: .
+      dockerfile: Dockerfile
+
