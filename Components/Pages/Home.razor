@@ -1,7 +1,21 @@
 ﻿@page "/"
 
 <PageTitle>Home</PageTitle>
+<h1>Glorp 🛸</h1>
 
-<h1>Hello, world!</h1>
+@if (curValue == null)
+{
+    <p>
+        <em>loading...</em>
+    </p>
+}
+else
+{
+    <span class="text-success fst-italic">
+        @curValue
+    </span>
+}
 
-Welcome to your new app.
+@code {
+    private string? curValue = "uwu";
+}
